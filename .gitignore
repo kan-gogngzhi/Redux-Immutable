@@ -1,3 +1,8 @@
+<<<<<<< f3413586cf9bc40d5aba848f005e5bde425642ce
+node_modules
+.DS_Store
+dist
+=======
 # Created by .ignore support plugin (hsz.mobi)
 ### JetBrains template
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and Webstorm
@@ -9,7 +14,6 @@
 .idea/dictionaries
 .idea/vcs.xml
 .idea/jsLibraryMappings.xml
-node_modules
 
 # Sensitive or high-churn files:
 .idea/dataSources.ids
@@ -46,3 +50,4 @@ crashlytics.properties
 crashlytics-build.properties
 fabric.properties
 
+>>>>>>> schema, actions, reducers
