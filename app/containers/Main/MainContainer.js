@@ -1,9 +1,10 @@
 import React from 'react';
+import {color} from './styles.css';
 
 const MainContainer = React.createClass({
   render () {
     return (
-        <p>{'Hello World!'}</p>
+        <p className={color}>{'Hello World!'}</p>
     );
   }
 });
