@@ -1,3 +1,11 @@
-/**
- * Created by kylekan on 10/10/2016.
- */
+import React from 'react';
+
+const MainContainer = React.createClass({
+    render () {
+        return (
+            <p>Hello World!</p>
+        );
+    }
+});
+
+export default MainContainer;

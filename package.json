@@ -20,7 +20,8 @@
   "homepage": "https://github.com/kan-gogngzhi/Redux-Immutable#readme",
   "dependencies": {
     "react": "^15.3.2",
-    "react-dom": "^15.3.2"
+    "react-dom": "^15.3.2",
+    "react-router": "^2.8.1"
   },
   "devDependencies": {
     "babel-core": "^6.17.0",
