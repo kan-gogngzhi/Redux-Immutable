@@ -31,7 +31,19 @@ const AuthenticateContainer = React.createClass({
   }
 });
 
-export default connect(
-    (state) => ({isFetching: state.isFetching, error: state.error}),
-    (dispatch) => bindActionCreators(userActionCreators, dispatch)
-)(AuthenticateContainer);
+function mapStateToProps (state) {
+  return {
+    isFetching: state.isFetching,
+    error: state.error
+  };
+}
+
+function mapDispatchToProps(dispatch){
+  return bindActionCreators(userActionCreators, dispatch);
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(AuthenticateContainer);
+// export default connect(
+//  (state) => ({isFetching: state.isFetching, error: state.error}),
+//  (dispatch) => bindActionCreators(userActionCreators, dispatch)
+// )(AuthenticateContainer);
