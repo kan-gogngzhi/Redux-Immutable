@@ -4,7 +4,7 @@ import {Navigation} from 'components';
 export default function MainContainer (props) {
   return (
       <div>
-        <Navigation />
+        <Navigation isAuthed={false} />
         {props.children}
       </div>
   );
