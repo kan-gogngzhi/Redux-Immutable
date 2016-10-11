@@ -1,11 +1,13 @@
 import React from 'react';
-import { Router, Route, hashHistory } from 'react-router';
-import {MainContainer} from 'containers';
+import { Router, Route, hashHistory, IndexRoute } from 'react-router';
+import {MainContainer, HomeContainer} from 'containers';
 
 const routes = (
     <Router history={hashHistory}>
-        <Route path='/' component={MainContainer} />
-        <Route path='*' component={MainContainer}/>
+      <Route path='/' component={MainContainer}>
+        <IndexRoute component={HomeContainer}/>
+      </Route>
+      <Route path='*' component={MainContainer}/>
     </Router>
 );
 
